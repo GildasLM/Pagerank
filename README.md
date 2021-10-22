@@ -50,7 +50,9 @@ On peut noter que l'éxecution du Spark est grandement handicapée par l'écritu
 ![Spark](ressources/graph2.png)
 
 # Conclusion
-Malgré notre soucis d'optimisation d'écriture du script Spark, on peut voir que Spark est bien plus performant que Pig. De plus 
+Malgré notre soucis d'optimisation d'écriture du script Spark, on peut voir que Spark est bien plus performant que Pig. De plus, l'augmentation en fonction des clusters est clairement visible.
+
+Pour conclure, nous avons de nombreuses pistes d'amélioration qui n'ont pas pu être appliquées par manque de temps et de maitrise des technologies pour avoir des résultats bien plus flagrants comme par exemple l'optimisation de l'écriture des sorties ou un crawl plus conséquent.
 
 ![Spark Vs Pig](ressources/graph1.png)
 
