@@ -16,10 +16,11 @@ On créer un nouveau bucket pour notre expérience.
 La première chose à faire est d'importer les fichiers qui nous seront utiles.
 On importe donc:
 - Le script pig: **pagerank_init.pig** et **pagerank.pig**
-- Le script SPARK:
+- Le script SPARK: **pagerank_spark.py**
 - Le crawl: *Voir plus haut*
 
 ## Clusters
+Il faut construire les clusters qui nous serviront pour l'expérience depuis l'onglet DataProc.
 Nous avons choisit d'utiliser des configurations de clusters prédéfinies:
 - 2 workers N1-2 standard avec 2 processeurs virtuels et 7.5 Go de mémoire
 - 2 workers N1-4 standard avec 4 precesseurs virtuels et 15 Go de mémoire
@@ -39,7 +40,6 @@ Comme nous nous y attendions Pig est relativement long mais nous pouvons cependa
 ![Spark](ressources/graph3.png)
 
 ## Spark
-
 ### Exécution
 Pour effectuer notre Pagerank en Spark nous effectuons la commande suivantes:
 - gcloud dataproc jobs submit pyspark --cluster=cluster-n13 --region=europe-west1 gs://[**Nom_du_bucket**]/pagerank_spark.py -- gs://[**Nom_du_bucket**]/crawl.csv [**Nb_d'itérations**]
